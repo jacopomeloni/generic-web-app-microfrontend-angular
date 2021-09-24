@@ -1,7 +1,5 @@
 # generic-web-app-microfrontend-angular
 
-buildare app1 come singolo file
-
 ## Creare app root
 ```
 mkdir code 
@@ -24,5 +22,17 @@ ng build --single-bundle --output-hashing none
 ```
 cd app1
 ng add @angular/elements
+```
+modificare src/app/app.module.ts e src/index.html
+
+## Buildare app1 come singolo file
+```
+npm install ngx-build-plus --save
+modificare il file angular.json
+    "architect": {
+        "build": {"builder": "ngx-build-plus:build",
+        "serve": {"builder": "ngx-build-plus:dev-server",
+        "test": {"builder": "ngx-build-plus:karma",
+ng build --output-hashing none --single-bundle true
 ```
 https://dev.entando.org/v6.3.2/tutorials/micro-frontends/angular.html#create-angular-app

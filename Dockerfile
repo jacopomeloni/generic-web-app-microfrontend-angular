@@ -9,7 +9,7 @@ RUN apk --no-cache add \
 
 # Angular cli
 RUN npm install -g @angular/cli
-RUN npm install -g ngx-build-plus
+#RUN npm install -g ngx-build-plus
 
 
 RUN mkdir /.npm && chown -R 1000:1000 "/.npm"
