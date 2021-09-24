@@ -1,6 +1,7 @@
 # generic-web-app-microfrontend-angular
 ```
-ng new app1 --routing --prefix app1
-cd app1
-ng add single-spa-angular
+mkdir code 
+cd code
+ng new generic-web-app-microfrontend-angular --directory ./
 ```
+https://dev.entando.org/v6.3.2/tutorials/micro-frontends/angular.html#create-angular-app
