@@ -3,6 +3,6 @@ build:
 dev:
 	docker run --rm --name genericwebappmicrofrontendangular -it --user $(shell id -u):$(shell id -u) \
 	-v ${PWD}:/app \
-	-p 3001:3001 \
+	-p 4200:4200 \
 	--env-file .env jm/genericwebappmicrofrontendangular sh
 
